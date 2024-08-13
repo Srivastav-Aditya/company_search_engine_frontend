@@ -12,7 +12,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { username, password });
+      const res = await axios.post('https://company-search-engine-backend.onrender.com/api/auth/register', { username, password });
       setToken(res.data.token);
       window.location.href = '/';
     } catch (err) {
