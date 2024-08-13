@@ -23,7 +23,7 @@ function ViewData() {
     };
 
     try {
-      const res = await axios.get('http://localhost:5000/api/companies', {
+      const res = await axios.get('https://company-search-engine-backend.onrender.com/api/companies', {
         params,
         headers: { Authorization: `Bearer ${getToken()}` },
       });
